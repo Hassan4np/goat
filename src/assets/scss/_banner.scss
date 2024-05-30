@@ -1,0 +1,65 @@
+.banner {
+    &-wrapper {
+        background-image: url("../img/banner-bg.png");
+        min-height: 100vh;
+        width: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        z-index: -1;
+
+        &::before {
+            content: "";
+            position: absolute;
+            z-index: -1;
+            right: 18px;
+            top: 0;
+            width: 428px;
+            height: 500px;
+            background-image: url("../img/banner-top-img.png");
+
+        }
+        &::after {
+            content: "";
+            position: absolute;
+            z-index: -1;
+            left: 18px;
+            bottom: -110px;
+            width: 525px;
+            height: 690px;
+            background-image: url("../img/banner-button-left.png");
+            background-repeat: no-repeat;
+
+        }
+    }
+
+    &-content {
+        padding-top: 235px;
+
+        & h1 {
+            text-shadow: -12px 8px 0px #030303;
+            -webkit-text-stroke-width: 8px;
+            -webkit-text-stroke-color: #050701;
+            margin-bottom: 32px;
+        }
+
+        & p {
+            @include font-35;
+            color: #030303;
+            padding-top: 32px;
+            padding-bottom: 48px;
+        }
+
+        & .btn {
+            padding: 24px 140px !important;
+            font-size: 28px;
+            margin-bottom: 306px !important;
+
+            &:hover {
+                box-shadow: none !important;
+            }
+
+        }
+    }
+}

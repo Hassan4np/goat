@@ -1,0 +1,98 @@
+.cta{
+    margin-bottom: 150px;
+    @include xl{
+        margin-bottom: 100px;
+    }
+    @include lg{
+        margin-bottom: 80px;
+    }
+    @include mmd{
+        margin-bottom: 50px;
+    }
+    @include sm{
+        margin-bottom: 30px;
+    }
+    &-content{
+        border: 2px solid $primary;
+        border-radius: 56px;
+        @include sm{
+           border-radius: 15px;
+        }
+        &-text{
+            padding: 100px 0 100px 106px;
+            @include mmd{
+                padding: 80px 0 80px 84px;
+            }
+            @include sm{
+                padding: 30px 0 30px 34px;
+            }
+            & h2{
+                @include font-56;
+                margin-bottom: 234px;
+                @include xxl{
+                    margin-bottom: 200px;
+                }
+                @include xl{
+                    margin-bottom: 180px;
+                }
+                @include lg{
+                    margin-bottom: 160px;
+                }
+                @include mmd{
+                    margin-bottom: 140px;
+                }
+                @include sm{
+                    margin-bottom: 50px;
+                }
+            }
+            & button {
+                border-radius: 72px;
+                padding: 17px 40px;
+                color: $heading;
+                @include font-24;
+                font-family: $font-1;
+                @include mmd{
+                    padding: 14px  20px;
+                }
+                @include sm{
+                    padding: 12px  17px;
+                }
+            }
+            & .btn1{
+                background-color: $primary;
+                transition: .5s ease-in-out;
+                &:hover{
+                    background-color: #1D2305;
+                }
+            }
+            .btn2{
+                background-color: #1D2305;
+                border: none !important;
+                transition: .5s ease-in-out;
+                &:hover{
+                    background-color: $primary;
+                }
+            }
+
+        }
+        &-image{
+            width: 100%;
+            height: 100%;
+            @include mmd{
+                height: 400px;
+            }
+            @include sm{
+                height: 350px;
+            }
+            & img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                border-radius:0 56px 56px 0;
+                @include sm{
+                    border-radius:0px 0 15px 15px;
+                }
+            }
+        }
+    }
+}

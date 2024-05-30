@@ -1,0 +1,111 @@
+.about {
+    &-image{
+        @include sm{
+            padding: 0 20px
+        }
+        &::before{
+            content: "";
+            position: absolute;
+            z-index: -1;
+            background-color: $primary;
+            width: 300px;
+            height: 300px;
+            top: 80px;
+            left: -152px;
+            border-radius: 50%;
+            filter: blur(200px);
+
+        }
+        max-width: 574px;
+        height: 897px;
+        @include xl{
+            width: 100%;
+            height: 100%;
+        }
+        @include lg{
+            width: 100%;
+            height: 100%;
+        }
+        @include mmd{
+            width: 100%;
+            height: 100%;
+        }
+        @include sm{
+            max-width:340px ;
+            height: 650px;
+            text-align: center;
+        
+        }
+        & img{
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    }
+    &-content {
+        @include sm{
+            margin-bottom: 20px;
+        }
+        &-text {
+            @include sm{
+                padding: 0 20px;
+                text-align: center
+            }
+            & h2 {
+                @include font-80;
+                margin-bottom: 35px;
+                @include mmd{
+                    margin-bottom: 20px;
+                }
+                @include sm{
+                    margin-bottom: 20px;
+                }
+            }
+            & p {
+                @include font-26;
+                color: #D7D8D2 !important;
+                margin-bottom: 42px;
+                @include xl{
+                    margin-bottom: 38px;
+                }
+                @include lg{
+                    margin-bottom: 38px;
+                }
+                @include mmd{
+                    margin-bottom: 25px;
+                }
+                @include sm{
+                    margin-bottom: 20px;
+                }
+            }
+            & button {
+                border-radius: 72px;
+                padding: 17px 40px;
+                color: $heading;
+                @include font-24;
+                font-family: $font-1;
+                @include mmd{
+                    padding: 14px  20px;
+                }
+                @include sm{
+                    padding: 12px  17px;
+                }
+            }
+            & .btn1{
+                background-color: $primary;
+                transition: .5s ease-in-out;
+                &:hover{
+                    background-color: #1D2305;
+                }
+            }
+            .btn2{
+                background-color: #1D2305;
+                border: none !important;
+                transition: .5s ease-in-out;
+                &:hover{
+                    background-color: $primary;
+                }
+            }
+        }
+    }
+}

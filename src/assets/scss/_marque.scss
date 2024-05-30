@@ -1,0 +1,26 @@
+.marquee {
+    border-left: none;
+    border-right: none;
+    background: $primary;
+    padding: 0;
+    width: 100%;
+    position: relative;
+    z-index: 99;
+    @include sm {
+        padding: 20px 0;
+    }
+    .rfm-initial-child-container {
+        column-gap: 32px;
+        overflow: hidden;
+        align-items: center;
+        padding-top: 20px;
+        padding-bottom: 10px;
+        .rfm-child {
+            figure {
+                img {
+                    max-width: 158px;
+                }
+            }
+        }
+    }
+}
