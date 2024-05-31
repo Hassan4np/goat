@@ -36,6 +36,14 @@
 
     &-content {
         padding-top: 235px;
+        .copy-text{
+            width: 173px;
+            right: 40px;
+            top: 135px;
+            .text{
+                @include font-20;
+            }
+        }
 
         & h1 {
             text-shadow: -12px 8px 0px #030303;
@@ -60,6 +68,11 @@
                 box-shadow: none !important;
             }
 
+        }
+        & .bottom-img{
+            right: 80px;
+            bottom: 122px;
+        
         }
     }
 }

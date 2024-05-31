@@ -1,103 +1,69 @@
-.tokenomics {
-    background-color: $bg;
-    & h2 {
-        @include text-shadow;
-    }
-    &-percentage {
-        width: 550px;
-        @include xl {
-            width: 100%;
-        }
-        @include lg {
-            width: 100%;
-        }
-        @include mmd {
-            width: 100%;
-        }
-        &-item {
-            & .line {
-                display: block;
-                width: 100%;
-                height: 24px;
-                border-radius: 93px;
-                background-color: #D5FEFF;
-                margin-bottom: 14px;
-                position: relative;
-                z-index: 1;
-                @include mmd {
-                    height: 20px;
-                }
-                &-wrap {
-                    position: absolute;
-                    z-index: 2;
-                    width: 50%;
-                    height: 100%;
-                    background-color: #E16DDF;
-                    border-radius: 93px;
-                }
+.token {
+    &-wrapper {
+        background-image: url("../img/token-bg.png");
+        text-align: center;
+        background-repeat: no-repeat;
+        // padding: 119px 50px;
+        &-title {
+            h3 {
+                text-shadow: -12px 8px 0px #030303;
+                -webkit-text-stroke-width: 8px;
+                -webkit-text-stroke-color: #050701;
+                letter-spacing: 14.4px;
+                text-transform: capitalize;
+                padding-top: 119px;
+                transform: rotate(-4deg);
             }
-            &:not(:last-child) {
-                margin-bottom: 24px;
-                @include mmd {
-                    margin-bottom: 20px;
+        }
+        & .img-section{
+            margin-top: 270px;
+            & .image{
+                .crickel-img{
+                    height: 665px;
                 }
-            }
-            // &:nth-child(2) {
-            //     & .line {
-            //         &-wrap {
-            //             width: 10%;
-            //             background-color: #FED41D;
-            //         }
-            //     }
-            // }
-            // &:nth-child(3) {
-            //     & .line {
-            //         &-wrap {
-            //             width: 15%;
-            //             background-color: #FA7C29;
-            //         }
-            //     }
-            // }
-            // &:nth-child(4) {
-            //     & .line {
-            //         &-wrap {
-            //             width: 25%;
-            //             background-color: #033FD5;
-            //         }
-            //     }
-            // }
-            & .text {
-                & p {
-                    @include font-24;
+                img{
+                    margin-top: -20px;
+                }
+                .token2{
+                    top: -200px;
+                    left: 36%;
+                    width: 280px;
+                    height: 335px;
+                    img{
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+                .token1{
+                    top: -24px;
+                    left: 112px;
+                    width: 250px;
+                    height: 300px;
+                    transform: rotate(-2deg);
+                    img{
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+                .token3{
+                    top: -15px;
+                    right: 129px;
+                    width: 316px;
+                    height: 380px;
+                    img{
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+                .cricel{
+                    transform: translateY(-50%);
+                    bottom: -82px;
+                    left: 33%;
+                    width: 460px;
+                    height: 328px;
+          
                 }
             }
         }
-    }
-    &-chart {
-        --width: 590px;
-        width: var(--width);
-        height: var(--width);
-        border-radius: 100%;
-        border: 3px solid #EBF8FF;
-        background-color: #CDEEFF;
-        padding: 30px;
-        @include xl {
-            --width: 480px;
-        }
-        @include lg {
-            --width: 450px;
-        }
-        @include mmd {
-            padding: 0px;
-            --width: 330px;
-        }
-        @include sm {
-            --width: 350px;
-            padding: 0px;
-            margin-top: 24px;
-        }
-    }
-    &-logo {
-        transform: translate(-50%, -50%);
     }
 }

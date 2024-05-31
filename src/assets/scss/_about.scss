@@ -1,109 +1,54 @@
 .about {
-    &-image{
-        @include sm{
-            padding: 0 20px
-        }
-        &::before{
+    &-wrapper {
+        background-image: url("../img/about-bg-1.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        padding: 145px 70px;
+        position: relative;
+        z-index: 1;
+
+        &::after {
             content: "";
             position: absolute;
-            z-index: -1;
-            background-color: $primary;
-            width: 300px;
+            z-index: 2;
+            background-image: url("../img/about-img.png");
+            width: 320px;
             height: 300px;
-            top: 80px;
-            left: -152px;
-            border-radius: 50%;
-            filter: blur(200px);
+            background-repeat: no-repeat;
+            bottom: 115px;
+            right: 50px;
+        }
 
-        }
-        max-width: 574px;
-        height: 897px;
-        @include xl{
+        &-content {
+            background-image: url("../img/about-bg-2.png");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
             width: 100%;
-            height: 100%;
-        }
-        @include lg{
-            width: 100%;
-            height: 100%;
-        }
-        @include mmd{
-            width: 100%;
-            height: 100%;
-        }
-        @include sm{
-            max-width:340px ;
-            height: 650px;
-            text-align: center;
-        
-        }
-        & img{
-            width: 100%;
-            height: 100%;
-            object-fit: contain;
-        }
-    }
-    &-content {
-        @include sm{
-            margin-bottom: 20px;
-        }
-        &-text {
-            @include sm{
-                padding: 0 20px;
-                text-align: center
-            }
-            & h2 {
-                @include font-80;
-                margin-bottom: 35px;
-                @include mmd{
-                    margin-bottom: 20px;
+            transform: rotate(-2deg);
+     
+       
+
+            &-text {
+                padding: 294px 190px 175px 197px;
+
+                & h3 {
+                    text-shadow: -12px 8px 0px #030303;
+                    -webkit-text-stroke-width: 8px;
+                    -webkit-text-stroke-color: #050701;
+                    color: $white;
+                    letter-spacing: 14.4px;
+                    padding-bottom: 87px;
+                    transform: rotate(-2deg)
                 }
-                @include sm{
-                    margin-bottom: 20px;
-                }
-            }
-            & p {
-                @include font-26;
-                color: #D7D8D2 !important;
-                margin-bottom: 42px;
-                @include xl{
-                    margin-bottom: 38px;
-                }
-                @include lg{
-                    margin-bottom: 38px;
-                }
-                @include mmd{
-                    margin-bottom: 25px;
-                }
-                @include sm{
-                    margin-bottom: 20px;
-                }
-            }
-            & button {
-                border-radius: 72px;
-                padding: 17px 40px;
-                color: $heading;
-                @include font-24;
-                font-family: $font-1;
-                @include mmd{
-                    padding: 14px  20px;
-                }
-                @include sm{
-                    padding: 12px  17px;
-                }
-            }
-            & .btn1{
-                background-color: $primary;
-                transition: .5s ease-in-out;
-                &:hover{
-                    background-color: #1D2305;
-                }
-            }
-            .btn2{
-                background-color: #1D2305;
-                border: none !important;
-                transition: .5s ease-in-out;
-                &:hover{
-                    background-color: $primary;
+
+                p {
+                    @include font-48;
+                    letter-spacing: 4px;
+                    text-transform: capitalize;
+                    transform: rotate(-2deg)
                 }
             }
         }

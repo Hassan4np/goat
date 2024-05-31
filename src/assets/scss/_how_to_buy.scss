@@ -1,0 +1,105 @@
+.how-to-buy {
+    &-wrapper {
+        background-image: url("../img/how-to-buy-bg.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 121px 48px 400px 0;
+        position: relative;
+        z-index: 1;
+        &::after{
+            content: "";
+            position: absolute;
+            z-index: 2;
+            bottom: -14px;
+            left: 0;
+            background-image: url("../img/how-to-buy-img.png");
+            width: 528px;
+            height: 600px;
+
+        }
+
+        &-title {
+            & h3 {
+                text-shadow: -12px 8px 0px #030303;
+                -webkit-text-stroke-width: 8px;
+                -webkit-text-stroke-color: #050701;
+                letter-spacing: 10px;
+                text-align: center;
+                text-transform: uppercase;
+                margin-bottom: 20px;
+                transform: rotate(-2deg);
+            }
+        }
+
+        &-content {
+            .item {
+                margin-bottom: 20px;
+
+                &:nth-child(even) {
+                    h5 {
+                        margin-right: 40px;
+                        margin-left: -135px;
+                    }
+
+                    p {
+                        margin-right: 50px;
+                        margin-left: -135px;
+                    }
+                }
+
+                &:nth-child(2) {
+                    margin-top: 200px;
+                    margin-bottom: -200px;
+                }
+
+                &:nth-child(4) {
+                    margin-top: 220px;
+                    margin-bottom: -200px;
+                }
+            }
+
+            .card1 {
+                background-image: url("../img/card1.png");
+                transform: rotate(-2deg);
+            }
+
+            .card2 {
+                background-image: url("../img/card3.png");
+                transform: rotate(-3deg);
+
+            }
+
+            .card3 {
+                background-image: url("../img/card2.png");
+                transform: rotate(-2deg);
+
+            }
+
+            .card4 {
+                background-image: url("../img/card4.png");
+                transform: rotate(-3deg);
+            }
+
+            &-cards {
+                text-align: center;
+                background-repeat: no-repeat;
+                padding: 67px 70px 61px 154px;
+                background-size: 100% 100%;
+                height: 100%;
+
+                h5 {
+                    @include font-44;
+                    color: $black;
+                    letter-spacing: 2px;
+                    margin-bottom: 30px;
+                    transform: rotate(-2deg);
+                }
+
+                P {
+                    @include font-25;
+                    transform: rotate(-2deg);
+                }
+            }
+        }
+    }
+}
